@@ -1,12 +1,25 @@
 #root {
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
+  padding: 0 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  #root {
+    padding: 0;
+  }
 }
 
 /* Page container */
 .page-container {
   /* Container stays stable */
+  flex: 1;
+  padding-bottom: 200px; /* Space for sticky contacts */
 }
 
 /* Page content with smooth transitions */
@@ -50,6 +63,18 @@ nav a {
   text-decoration: none;
 }
 
+/* Contacts styles - sticky at bottom */
+#contacts {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1400px;
+  z-index: 1000;
+  background: #000;
+}
+
 .dark-grey {
   background-color: #363636;
 }
@@ -88,4 +113,11 @@ nav a {
   background: transparent;
   position: relative;
   z-index: 1;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) and (max-width: 500px) {
+  #showcase img {
+    height: 340px;
+  }
 }

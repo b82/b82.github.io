@@ -2,9 +2,10 @@ import './App.css'
 import { createBrowserRouter, RouterProvider, Outlet, useLocation } from 'react-router'
 import { useEffect } from 'react'
 import Home from './pages/Home'
-import Work from './pages/Work'
+import Works from './pages/Works'
 import WorkDetail from './pages/WorkDetail'
 import Header from './components/Header'
+import Contacts from './components/Contacts'
 
 // Simple layout with page transitions
 function Layout() {
@@ -23,6 +24,7 @@ function Layout() {
           <Outlet />
         </div>
       </div>
+      <Contacts />
     </>
   )
 }
@@ -37,11 +39,11 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "work",
-        element: <Work />,
+        path: "works",
+        element: <Works />,
       },
       {
-        path: "work/:id",
+        path: "works/:id",
         element: <WorkDetail />,
       },
     ],

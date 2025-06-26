@@ -69,11 +69,11 @@ function WorkDetail() {
     return (
         <main>
             <section className="mt-20">
-                <Link to="/work" className="text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block">
+                <Link to="/works" className="text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block">
                     ← Back to Works
                 </Link>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div>
                         <img src={work.image} alt={work.title} className="w-full rounded-lg" />
                     </div>
@@ -110,6 +110,7 @@ function WorkDetail() {
                     </div>
                 </div>
             </section>
+
         </main>
     )
 }
