@@ -4,6 +4,27 @@
   text-align: center;
 }
 
+/* Page container */
+.page-container {
+  /* Container stays stable */
+}
+
+/* Page content with smooth transitions */
+.page-content {
+  animation: fadeIn 0.4s ease-out;
+  will-change: opacity;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Header styles */
 header {
   width: 100%;
   padding: 1rem 2rem;

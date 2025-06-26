@@ -1,5 +1,4 @@
 import { Link, useParams } from 'react-router'
-import Header from '../components/Header'
 
 function WorkDetail() {
     const { id } = useParams()
@@ -58,66 +57,60 @@ function WorkDetail() {
 
     if (!work) {
         return (
-            <>
-                <Header />
-                <main className="mt-20">
-                    <h1 className="text-[40px] font-medium">Work not found</h1>
-                    <Link to="/work" className="text-[20px] font-regular text-blue-600 hover:underline">
-                        ← Back to Works
-                    </Link>
-                </main>
-            </>
+            <main className="mt-20">
+                <h1 className="text-[40px] font-medium">Work not found</h1>
+                <Link to="/work" className="text-[20px] font-regular text-blue-600 hover:underline">
+                    ← Back to Works
+                </Link>
+            </main>
         )
     }
 
     return (
-        <>
-            <Header />
-            <main>
-                <section className="mt-20">
-                    <Link to="/work" className="text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block">
-                        ← Back to Works
-                    </Link>
+        <main>
+            <section className="mt-20">
+                <Link to="/work" className="text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block">
+                    ← Back to Works
+                </Link>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                        <div>
-                            <img src={work.image} alt={work.title} className="w-full rounded-lg" />
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <img src={work.image} alt={work.title} className="w-full rounded-lg" />
+                    </div>
+
+                    <div>
+                        <h1 className="text-[40px] font-medium mb-4">{work.title}</h1>
+                        <p className="text-[20px] font-regular text-gray-600 mb-6">{work.description}</p>
+
+                        <div className="mb-6">
+                            <h3 className="text-[24px] font-medium mb-2">Project Details</h3>
+                            <p className="text-[16px] font-regular"><strong>Type:</strong> {work.type}</p>
+                            <p className="text-[16px] font-regular"><strong>Duration:</strong> {work.duration}</p>
+                        </div>
+
+                        <div className="mb-6">
+                            <h3 className="text-[24px] font-medium mb-2">Technologies</h3>
+                            <div className="flex flex-wrap gap-2">
+                                {work.technologies.map((tech, index) => (
+                                    <span key={index} className="px-3 py-1 bg-gray-200 rounded-full text-[14px] font-regular">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
 
                         <div>
-                            <h1 className="text-[40px] font-medium mb-4">{work.title}</h1>
-                            <p className="text-[20px] font-regular text-gray-600 mb-6">{work.description}</p>
-
-                            <div className="mb-6">
-                                <h3 className="text-[24px] font-medium mb-2">Project Details</h3>
-                                <p className="text-[16px] font-regular"><strong>Type:</strong> {work.type}</p>
-                                <p className="text-[16px] font-regular"><strong>Duration:</strong> {work.duration}</p>
-                            </div>
-
-                            <div className="mb-6">
-                                <h3 className="text-[24px] font-medium mb-2">Technologies</h3>
-                                <div className="flex flex-wrap gap-2">
-                                    {work.technologies.map((tech, index) => (
-                                        <span key={index} className="px-3 py-1 bg-gray-200 rounded-full text-[14px] font-regular">
-                                            {tech}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <div>
-                                <h3 className="text-[24px] font-medium mb-2">Key Features</h3>
-                                <ul className="list-disc list-inside space-y-1">
-                                    {work.features.map((feature, index) => (
-                                        <li key={index} className="text-[16px] font-regular">{feature}</li>
-                                    ))}
-                                </ul>
-                            </div>
+                            <h3 className="text-[24px] font-medium mb-2">Key Features</h3>
+                            <ul className="list-disc list-inside space-y-1">
+                                {work.features.map((feature, index) => (
+                                    <li key={index} className="text-[16px] font-regular">{feature}</li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
-                </section>
-            </main>
-        </>
+                </div>
+            </section>
+        </main>
     )
 }
 
