@@ -3,7 +3,7 @@ import dribble from '../assets/dribble.svg'
 
 function Contacts() {
     return (
-        <section id="contacts" className="mt-50 w-full grid grid-cols-1 md:grid-cols-10 gap-5 justify-between text-white pt-10 pb-10 relative">
+        <section id="contacts" className="w-full grid grid-cols-1 md:grid-cols-10 gap-5 justify-between text-white pt-10 pb-10 relative">
             <div className="contacts-bg-full w-full h-[176px]"></div>
             <div className="md:col-span-5 text-left">
                 <p className="text-[24px] font-medium">LUCA MORMILE</p>

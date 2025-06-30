@@ -3,7 +3,8 @@ import { createBrowserRouter, RouterProvider, Outlet, useLocation } from 'react-
 import { useEffect } from 'react'
 import Home from './pages/Home'
 import Works from './pages/Works'
-import WorkDetail from './pages/WorkDetail'
+import DailyCoachDetail from './pages/DailyCoachDetail'
+import RestAppDetail from './pages/RestAppDetail'
 import Header from './components/Header'
 import Contacts from './components/Contacts'
 
@@ -43,8 +44,12 @@ const router = createBrowserRouter([
         element: <Works />,
       },
       {
-        path: "works/:id",
-        element: <WorkDetail />,
+        path: "works/dailycoach",
+        element: <DailyCoachDetail />,
+      },
+      {
+        path: "works/restapp",
+        element: <RestAppDetail />,
       },
     ],
   },

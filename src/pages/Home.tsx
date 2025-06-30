@@ -6,16 +6,18 @@ function Home() {
         {
             id: 1,
             title: "RestApp",
-            description: "Mobile app concept for on-site restaurant use",
+            description: "Mobile app for on-site restaurant use",
             type: "Mobile",
-            image: "/mobile.svg"
+            image: "/mobile.svg",
+            path: "restapp"
         },
         {
             id: 2,
-            title: "Daily Coach",
-            description: "Web dashboard concept for personal trainers",
+            title: "DailyCoach",
+            description: "Web dashboard for personal trainers",
             type: "Web",
-            image: "/web.svg"
+            image: "/web.svg",
+            path: "dailycoach"
         }
     ]
 
@@ -23,18 +25,18 @@ function Home() {
     return (
         <main>
             {/* INTRO */}
-            <section id="intro">
+            <section id="intro" className="text-center">
                 <h1 className="text-[40px] font-medium m-0 mt-20">LUCA MORMILE</h1>
                 <h2 className="text-[20px] font-regular">UI/UX Designer, Product Designer, Developer</h2>
                 <h3 className="text-[36px] font-regular mt-5">I create smooth and elegant but easy to use user interfaces</h3>
             </section>
 
             {/* SHOWCASE */}
-            <section id="showcase" className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <section id="showcase" className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
                 {works.map((work) => (
                     <Link
                         key={work.id}
-                        to={`/works/${work.id}`}
+                        to={`/works/${work.path}`}
                         className="work-item block p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow"
                     >
                         <img src={work.image} alt={work.title} className="w-full rounded-lg mb-4" />
@@ -46,7 +48,7 @@ function Home() {
             </section>
 
             {/* ABOUT */}
-            <section id="about" className="mt-50 w-full">
+            <section id="about" className="mt-50 w-full text-center">
                 <div className="divider black h-[10px] w-[140px] place-self-center"></div>
                 <h2 className="text-[24px] font-medium mt-10 mb-10">SOMETHING ABOUT ME</h2>
             </section>

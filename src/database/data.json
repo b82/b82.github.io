@@ -1,0 +1,42 @@
+{
+  "restapp": {
+    "title": "RestApp",
+    "description": "A comprehensive mobile application designed for on-site restaurant use.",
+    "type": "Mobile",
+    "technologies": ["React Native", "Node.js", "MongoDB"],
+    "duration": "3 months",
+    "image": {
+      "home": "/images/restapp/home.png",
+      "workout": "/images/restapp/menu.png",
+      "nutrition": "/images/restapp/detail.png",
+      "check": "/images/restapp/recap.png"
+    },
+    "features": [
+      "Real-time order tracking",
+      "Table reservation system",
+      "Customer feedback integration",
+      "Payment processing",
+      "Inventory management"
+    ]
+  },
+  "dailycoach": {
+    "title": "Personal Trainer Dashboard",
+    "description": "A web-based dashboard that allows personal trainers to manage their clients, track progress, and schedule sessions efficiently.",
+    "type": "Web",
+    "technologies": ["React", "Express.js", "PostgreSQL"],
+    "duration": "4 months",
+    "image": {
+      "home": "/images/dailycoach/home.png",
+      "workout": "/images/dailycoach/workout.png",
+      "nutrition": "/images/dailycoach/nutrition.png",
+      "check": "/images/dailycoach/check.png"
+    },
+    "features": [
+      "Client management system",
+      "Progress tracking",
+      "Session scheduling",
+      "Payment processing",
+      "Analytics dashboard"
+    ]
+  }
+}
