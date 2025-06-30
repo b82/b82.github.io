@@ -17,13 +17,9 @@ function Works() {
                     <p className="text-[20px] font-regular">Dashboard concept for personal trainers</p>
                     <span className="text-[20px] font-light">Web</span>
                     <p className="mt-5 text-[16px] font-light text-black">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+                        This project explores the design of a personal training dashboard that blends user experience and development logic.
+                        As a UX/UI designer with a strong background in coding, I focused not only on creating a clear and engaging interface, but also on structuring the layout in a way that would support real-world implementation.
+                        The result is a concept that simplifies training, nutrition, and progress tracking — while also reflecting how good design can live in harmony with scalable, modular development.
                     </p>
                     <Link to="/works/dailycoach" className="mt-5 text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block light-grey text-white rounded-full px-5 py-2">Detail</Link>
                 </article>
@@ -36,13 +32,10 @@ function Works() {
                     <p className="text-[20px] font-regular">App concept for on-site restaurant use</p>
                     <span className="text-[20px] font-light">Mobile</span>
                     <p className="mt-5 text-[16px] font-light text-black">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+                        Use case about a mobile ordering app designed for on-site restaurant use, emphasizing speed, clarity, and user engagement.
+                        The design concept leverages a minimal interface—large food images, a simple slider for filtering, and one-tap interactions—to create an intuitive experience that saves time and enhances decision-making.
+                        By combining sleek visual design with user-centered flows and considering technical feasibility, the solution does not only feels polished but could also be realistically
+                        implemented using modern technologies.
                     </p>
                     <Link to="/works/restapp" className="mt-5 text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block light-grey text-white rounded-full px-5 py-2">Detail</Link>
                 </article>

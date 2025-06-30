@@ -33,12 +33,12 @@ function DailyCoachDetail() {
 
                 {/* OVERVIEW */}
                 <div className="mt-10 grid grid-cols-1 gap-5 text-center">
-                    <h1 className="text-[48px] font-medium text-center">Personal Trainer Dashboard Concept Design</h1>
+                    <h1 className="text-[48px] font-medium text-center">Personal Trainer Dashboard - Concept Design</h1>
                     <h2 className="text-[40px] font-medium text-center">Overview</h2>
                     <p className="mb-20 text-[20px] font-light">
                         This concept explores the design of a personal fitness dashboard aimed at helping users stay on track with their workouts, nutrition, and progress.
                         The main goal was to create an intuitive, visually engaging interface that simplifies tracking and supports consistency over time.
-                        The project also reflects my dual mindset as a UX designer and developer, with attention to both user experience and implementation feasibility.
+                        The project is reflected under a dual mindset of UX design and development, with attention to both user experience and implementation feasibility.
                     </p>
                 </div>
 
@@ -50,7 +50,7 @@ function DailyCoachDetail() {
                         <div className="md:col-span-1"></div>
                         <p className='col-span-2 text-[20px] font-light'>The goal of this concept is to provide a simple yet informative dashboard that gives users a clear overview of their current training status.
                             The home screen features a collection of widgets highlighting key areas such as training progress, performance graphs, assigned trainer, and dietary plan.
-                            At the top, a status bar displays the user’s current goals and overall progress at a glance.</p>
+                            At the top, a status bar displays the user's current goals and overall progress at a glance.</p>
                         <div className="md:col-span-1"></div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ function DailyCoachDetail() {
                     <h2 className="text-[40px] font-medium text-center">Easy to use but very useful</h2>
                     <div className="grid grid-cols-1 md:grid-cols-4 md:gap-10">
                         <div className="md:col-span-1"></div>
-                        <p className='col-span-2 text-[20px] font-light'>The workout section is designed to offer a clear and organized view of the user’s training sessions.
+                        <p className='col-span-2 text-[20px] font-light'>The workout section is designed to offer a clear and organized view of the user's training sessions.
                             Exercises are grouped in an accordion-style layout to keep the interface clean and easily scannable.
                             Each entry can be expanded to reveal visual feedback on progress, helping users quickly understand how their performance evolves over time.
                             A calendar widget on the side allows users to explore past and upcoming workout sessions, supporting planning and consistency.
@@ -120,7 +120,8 @@ function DailyCoachDetail() {
                 </div>
 
                 {/* CONCLUSION */}
-                <div className="mt-50 grid grid-cols-1  gap-10 text-left">
+                <div className="mt-20 grid grid-cols-1  gap-10 text-left">
+                    <div className="divider black h-[10px] w-[140px] place-self-center"></div>
                     <h2 className="text-[40px] font-medium text-center">Final Considerations</h2>
                     <p className="text-[20px] font-light">
                         This concept was designed with a clear focus on usability, clarity, and engagement. Every section of the interface aims to reduce friction and guide the user through their training and nutrition

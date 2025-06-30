@@ -1,6 +1,9 @@
 import { Link } from 'react-router'
 import data from '../database/data.json'
-import mock1 from '../../public/images/restapp/cover.png'
+import flow from '../../public/images/restapp/flow.png'
+import welcome from '../../public/images/restapp/1.png'
+import detail from '../../public/images/restapp/2.png'
+import recap from '../../public/images/restapp/3.png'
 
 function RestAppDetail() {
 
@@ -19,128 +22,115 @@ function RestAppDetail() {
 
     return (
         <main>
-            <section className="mt-20 text-center">
+            <section className="mt-20">
 
                 {/* BACK TO WORKS */}
-                <Link to="/works" className="text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block">
+                {/* <Link to="/works" className="text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block">
                     ← Back to Works
-                </Link>
+                </Link> */}
 
-                {/* USE CASE */}
-                <div className="mt-10 grid grid-cols-1 gap-12">
-                    <h1 className="text-[40px] font-medium">Use Case - Ordering a product</h1>
-                    <img src={mock1} alt={work.title} className="rounded-lg" />
-                </div>
-
-                {/* CONTEXT */}
-                <div className="mt-20 grid grid-cols-1 gap-12">
-                    <h2 className="text-[30px] font-regular">Context</h2>
-                </div>
-                <div className="mt-5 grid grid-cols-1 md:grid-cols-4 md:gap-12">
-                    <div className="md:col-span-1"></div>
-                    <p className='col-span-2'>This project involved designing a mobile app intended for direct use by customers inside pubs or restaurants,
+                {/* OVERVIEW */}
+                <div className="mt-10 grid grid-cols-1 gap-5 text-center">
+                    <h1 className="text-[48px] font-medium text-center">Use case - Ordering a product</h1>
+                    <h2 className="text-[40px] font-medium text-center">Overview</h2>
+                    <p className="mb-20 text-[20px] font-light">
+                        This project involved designing a mobile app intended for direct use by customers inside pubs or restaurants,
                         aimed at simplifying and speeding up the ordering experience.
                         The interface is minimal, visual, and intuitive, with large images to highlight dishes and create a distinct
-                        experience compared to traditional digital menus.</p>
-                    <div className="md:col-span-1"></div>
+                        experience compared to traditional digital menus.
+                    </p>
+                    {/* <img src={flow} alt={work.title} className="rounded-lg w-full" /> */}
                 </div>
 
-                {/* USE CASE GOAL */}
-                <div className="mt-20 grid grid-cols-1 gap-12">
-                    <h4 className='text-[30px] font-regular'>Use Case Goal</h4>
-                </div>
-                <div className="mt-5 grid grid-cols-1 gap-12">
-                    <div>
-                        <p className='text-[20px] font-regular'>Enable the customer to:</p>
-                        <div className="md:col-span-1"></div>
-                        <p className='col-span-2'>Browse the menu independently in just a few taps</p>
-                        <p className='col-span-2'>Visually select appealing products</p>
-                        <p className='col-span-2'>Add items to their cart and instantly see the total</p>
-                        <p className='col-span-2'>Without requiring registration, login, or complex flows</p>
-                        <div className="md:col-span-1"></div>
+                {/* THE GOAL */}
+                <div className="mt-10 grid grid-cols-1 gap-10 text-left">
+                    <img src={flow} alt={work.title} className="rounded-lg w-full" />
+                    <h2 className="text-[40px] font-medium text-center">The Goal</h2>
+                    <div className="grid grid-cols-1 md:gap-10">
+                        <p className='col-span-2 text-[20px] font-light'>
+                            The core goal of this concept is to offer a seamless, low-friction ordering experience that works for anyone — whether tech-savvy or not — directly from their table.
+                            The entire flow is designed to minimize the number of interactions required to place an order, allowing the user to browse, select, and confirm in just a few intuitive steps.
+                            Starting from a single tap to access the menu, the user is guided through a simple and visually engaging experience: scroll through large, inviting images of dishes,
+                            tap to add them to the cart, instantly see the updated total, and confirm the order. There's no need for login, profile creation, or extra steps that might slow down the process.
+                            This streamlined approach not only speeds up service but also ensures accessibility for all types of users — from young customers in a rush to older ones who may not be used to digital menus.
+                            Every decision in the flow was made to reduce hesitation, support clarity, and enhance the pleasure of ordering.</p>
                     </div>
                 </div>
 
-                {/* ACTORS INVOLVED */}
-                <div className="mt-20 grid grid-cols-1 gap-12">
-                    <div>
-                        <p className='text-[30px] font-regular'>Actors Involved</p>
-                        <div className="md:col-span-1"></div>
-                        <p className='col-span-2'>User (Customer): accesses the app directly from the table (via QR code)</p>
-                        <p className='col-span-2'>System (Mobile App): displays menu content, manages selections and cart</p>
-                        <div className="md:col-span-1"></div>
+                {/* WELCOME SCREEN & MENU NAVIGATION */}
+                <div className="mt-30 grid gap-10 text-left">
+                    <h2 className="text-[40px] font-medium">Welcome Screen & Menu Navigation</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
+                        <p className='col-span-1 text-[20px] font-light'>
+                            The user journey begins with a full-screen welcome screen designed to evoke appetite and set the mood.
+                            This screen uses a vertical carousel of high-quality food images to engage the user visually, immediately creating an emotional connection with the dining experience.
+                            On the right side, a clearly visible “Menu” button allows the user to proceed to the ordering interface with a single tap.
+                            Once in the menu section, the layout remains minimal and intuitive: a horizontal slider at the top lets users filter the content by category (e.g., food, drinks, desserts), helping them
+                            focus on what they're interested in.Below the slider, a scrollable list displays individual menu items, each represented by a large photo, product name, and price. Users can interact with each item
+                            through a stepper component — a compact UI element that allows them to increment or remove quantities with minimal effort.At the bottom of the screen, a fixed action area includes
+                            a prominent “Confirm Order” button, followed by the real-time total. This consistent, anchored layout ensures that users always have a clear sense of their selections and can finalize their
+                            order quickly and confidently.</p>
+                        <img src={welcome} alt={work.title} className="rounded-lg w-full" />
                     </div>
                 </div>
 
-                {/* PRECONDITIONS */}
-                <div className="mt-20 grid grid-cols-1 gap-12">
-                    <div>
-                        <p className='text-[30px] font-regular'>Preconditions</p>
-                        <div className="md:col-span-1"></div>
-                        <p className='col-span-2'>The customer has already opened the app on their device</p>
-                        <p className='col-span-2'>A connection is available or the app works offline</p>
-                        <div className="md:col-span-1"></div>
+                {/* PRODUCT DETAIL VIEW */}
+                <div className="mt-30 grid gap-10">
+                    <h2 className="text-[40px] font-medium text-right">Product Detail View</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
+                        <img src={detail} alt={work.title} className="rounded-lg w-full" />
+                        <p className='col-span-1 text-[20px] font-light text-left'>
+                            Once a menu item is selected, the user is taken to a dedicated product detail screen designed to inform and entice at the same time.
+                            At the top, a breadcrumb navigation with a back arrow allows users to understand their current position and return easily to the menu list.
+                            The main section features a large, high-quality image of the selected item — purposely prominent to trigger visual appetite and support confident decision-making.
+                            Below the image, users find the product name, its category (e.g., meat, fish, vegetables), the estimated preparation time, and a short description crafted to be easy to scan and pleasant to read.
+                            The stepper component appears again beside the price, allowing users to quickly adjust quantity before adding to the order. As in the menu screen, a persistent bottom area shows the “Confirm Order”
+                            button and the current total, ensuring consistency and reducing friction at any step.The focus of this screen is to maintain a smooth, enjoyable
+                            experience — visually rich yet functionally minimal — so users can browse and select with clarity, speed, and confidence.</p>
                     </div>
                 </div>
 
-                {/* MAIN FLOW */}
-                <div className="mt-20 grid grid-cols-1 gap-12">
-                    <div>
-                        <p className='text-[30px] font-regular'>Main Flow (Basic Flow)</p>
-                        <ul className='list-disc list-inside space-y-1'>
-                            <li>1.	The customer opens the app and sees a welcome screen with a single button: “Menu”.</li>
-                            <li>2.	After tapping “Menu”, they access the main screen:</li>
-                            <ul className='list-disc list-inside space-y-1'>
-                                <li>A category slider appears at the top to filter products (e.g., Starters, Drinks, Desserts).</li>
-                                <li>A visual list of products is displayed below, featuring large images, names, and prices.</li>
-                            </ul>
-                            <li>3.	The customer can:</li>
-                            <ul className='list-disc list-inside space-y-1'>
-                                <li>Freely scroll through the list;</li>
-                                <li>Tap a product to open the detail view with an extended description and larger image;</li>
-                                <li>Tap “Add” to include it in the cart.</li>
-                            </ul>
-                            <li>4.	The total amount is always visible (button in the top right corner), and tapping it leads to the “Bill” screen.</li>
-                            <li>5.	Once finished, the customer taps on “Bill” to view a summary of selected products and the total amount due.</li>
-                        </ul>
+                {/* ORDER RECAP */}
+                <div className="mt-30 grid gap-10">
+                    <h2 className="text-[40px] font-medium text-right">Order Recap</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
+                        <p className='col-span-1 text-[20px] font-light text-left'>
+                            The final step in the flow is the recap screen, where users can review their selected items before submitting the order.
+                            At the top, a breadcrumb indicates the current section and includes a back arrow to return to the menu if needed.
+                            The main content area displays a familiar, consistent layout: each product is shown exactly as it appeared in the menu — with its image, name, price, and the stepper
+                            component — allowing users to make quick final adjustments without learning a new interface.
+                            The bottom section is slightly adapted to reinforce the final step of the process.
+                            In addition to the total price, it includes the table number and a clear, prominent “Send Request” button.
+                            This call-to-action highlights the intent: to notify the kitchen or central system of the order, without initiating any immediate payment.
+                            The goal of this screen is to give users confidence and clarity before sending their order.
+                            By keeping the design consistent and the interaction minimal, the experience remains simple, fast, and frictionless — right up to the final confirmation.</p>
+                        <img src={recap} alt={work.title} className="rounded-lg w-full" />
                     </div>
                 </div>
 
-                {/* POSTCONDITIONS */}
-                <div className="mt-20 grid grid-cols-1 gap-12">
-                    <div>
-                        <p className='text-[30px] font-regular'>Postconditions</p>
-                        <div className="md:col-span-1"></div>
-                        <p className='col-span-2'>Selected products are added to the cart</p>
-                        <p className='col-span-2'>The customer clearly sees the total and can either show it to a waiter or proceed (depending on the service model of the venue)</p>
-                        <div className="md:col-span-1"></div>
+                {/* CONCLUSION */}
+                <div className="mt-30 grid gap-10">
+                    <div className="divider black h-[10px] w-[140px] place-self-center"></div>
+                    <h2 className="text-[40px] font-medium text-center">Final Considerations</h2>
+                    <div className="grid grid-cols-1 md:gap-10">
+                        <p className='col-span-1 text-[20px] font-light text-left'>
+                            This concept was designed to offer a fast, intuitive, and visually engaging ordering experience for customers inside restaurants or pubs.
+                            The entire interaction flow was kept minimal and direct, allowing users to browse, select, and send their order with as little friction as possible — without logins, registrations, or payment steps.
+                            The design leverages large visuals, simplified navigation, and a modular component structure to make the app accessible to a wide range of users, regardless of their technical familiarity or available time.
+                            From a development perspective, the simplicity and consistency of the UI make this app an ideal candidate for a cross-platform framework like Flutter.
+                            Flutter's widget-based structure and single codebase approach would significantly reduce development time, enabling the delivery of both Android and iOS versions with minimal effort.
+                            It would also streamline the team size: a single developer could potentially handle the full implementation, reducing costs while maintaining quality.
+                            Overall, this concept demonstrates how thoughtful UX design and smart development choices can work together to create a lightweight, focused product that enhances the dining experience without disrupting it.</p>
                     </div>
                 </div>
 
-                {/* NON-FUNCTIONAL REQUIREMENTS */}
-                <div className="mt-20 grid grid-cols-1 gap-12">
-                    <div>
-                        <p className='text-[30px] font-regular'>Non-functional Requirements</p>
-                        <div className="md:col-span-1"></div>
-                        <p className='col-span-2'>Average ordering time: under 2 minutes</p>
-                        <p className='col-span-2'>Visual impact: emphasis on large, high-quality images</p>
-                        <p className='col-span-2'>User experience: designed for all users, including elderly and non-tech-savvy individuals</p>
-                        <p className='col-span-2'>Simplified navigation: each action requires a maximum of 2 taps</p>
-                        <div className="md:col-span-1"></div>
-                    </div>
-                </div>
 
-                <div className="mt-20 grid grid-cols-1 gap-12">
-                    <div>
-                        <p className='text-[30px] font-regular'>Design Considerations</p>
-                        <div className="mt-5 grid grid-cols-1 md:grid-cols-4 md:gap-12">
-                            <div className="md:col-span-1"></div>
-                            <p className='col-span-2 font-regular'>The core idea behind this design is to reduce friction in the ordering experience by providing a streamlined and visual interface.
-                                Large product images, category filtering through a slider, and the absence of intermediate steps (such as login or table selection) make the interaction extremely fast and effective.</p>
-                            <div className="md:col-span-1"></div>
-                        </div>
-                    </div>
-                </div>
+
+
+
+
+
+
             </section>
 
         </main>
