@@ -21,11 +21,33 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
+  padding: 0 5vw;
+}
+
+@media (min-width: 768px) and (max-width: 912px) {
+  .contacts-bg-full {
+    height: 206px;
+  }
 }
 
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 16px;
+  }
 }
 
 /* Debug styles to test font weights */

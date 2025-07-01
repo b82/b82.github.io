@@ -32,7 +32,7 @@ function Home() {
             </section>
 
             {/* SHOWCASE */}
-            <section id="showcase" className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+            <section id="showcase" className="mt-5 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
                 {works.map((work) => (
                     <Link
                         key={work.id}
@@ -48,15 +48,15 @@ function Home() {
             </section>
 
             {/* ABOUT */}
-            <section id="about" className="mt-50 w-full text-center">
+            <section id="about" className="mt-20 lg:mt-50 w-full text-center">
                 <div className="divider black h-[10px] w-[140px] place-self-center"></div>
                 <h2 className="text-[24px] font-medium mt-10 mb-10">SOMETHING ABOUT ME</h2>
             </section>
 
             {/* EXPERTISES */}
-            <section id="expertises" className="w-full grid grid-cols-1 md:grid-cols-10 gap-5">
+            <section id="expertises" className="w-full grid grid-cols-1 lg:grid-cols-10 gap-5">
                 <article className="md:col-span-3">
-                    <p className="text-[20px] font-regular text-left">My areas of expertise</p>
+                    <p className="text-[24px] font-regular text-left">My areas of expertise</p>
                     <p className="text-[20px] font-light text-left">UX/UI Designer and Developer with 15+ years of experience crafting intuitive, high-performing interfaces for web and mobile applications.
                         My strong technical background and deep understanding of design principles allow me to merge aesthetics, usability, and accessibility into seamless digital experiences.
                         Over the years, I've worked closely with product and UX teams to improve user journeys, design modern and engaging interfaces, and enhance overall product performance — always with a focus on clarity,

@@ -126,12 +126,12 @@ function DailyCoachDetail() {
                     <p className="text-[20px] font-light">
                         This concept was designed with a clear focus on usability, clarity, and engagement. Every section of the interface aims to reduce friction and guide the user through their training and nutrition
                         journey with intuitive, minimal interactions. While the design prioritizes the user experience, it also takes into account scalability and technical feasibility, proposing a modular structure
-                        that could be effectively developed with modern web technologies. This project allowed me to combine my design thinking with my technical background, approaching the solution not only from a UX perspective, 
-                    but also from a development-oriented mindset. In real-world scenarios, this helps bridge the gap between design and implementation, making communication with developers more fluid and aligned.
-                        Rather than building a fully detailed product, I chose to concentrate on the most meaningful parts of the experience — from data visualization to component structure — in order to highlight 
-                        my approach to design thinking, logic, and interface clarity. If further developed, the concept could evolve with real user feedback and include personalized coaching features, smart notifications, 
-                                            or integrations with fitness devices — while always keeping simplicity and user needs at the core.
-                        </p>
+                        that could be effectively developed with modern web technologies. This project allowed me to combine my design thinking with my technical background, approaching the solution not only from a UX perspective,
+                        but also from a development-oriented mindset. In real-world scenarios, this helps bridge the gap between design and implementation, making communication with developers more fluid and aligned.
+                        Rather than building a fully detailed product, I chose to concentrate on the most meaningful parts of the experience — from data visualization to component structure — in order to highlight
+                        my approach to design thinking, logic, and interface clarity. If further developed, the concept could evolve with real user feedback and include personalized coaching features, smart notifications,
+                        or integrations with fitness devices — while always keeping simplicity and user needs at the core.
+                    </p>
                 </div>
 
             </section>

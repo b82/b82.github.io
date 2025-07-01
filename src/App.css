@@ -17,7 +17,6 @@
 
 /* Page container */
 .page-container {
-  /* Container stays stable */
   flex: 1;
   padding-bottom: 200px; /* Space for sticky contacts */
 }
@@ -61,6 +60,13 @@ nav {
 
 nav a {
   text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  nav {
+    gap: 1rem;
+    font-size: 16px;
+  }
 }
 
 /* Contacts styles - sticky at bottom */

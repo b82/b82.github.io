@@ -39,7 +39,6 @@ function RestAppDetail() {
                         The interface is minimal, visual, and intuitive, with large images to highlight dishes and create a distinct
                         experience compared to traditional digital menus.
                     </p>
-                    {/* <img src={flow} alt={work.title} className="rounded-lg w-full" /> */}
                 </div>
 
                 {/* THE GOAL */}
@@ -59,7 +58,8 @@ function RestAppDetail() {
 
                 {/* WELCOME SCREEN & MENU NAVIGATION */}
                 <div className="mt-30 grid gap-10 text-left">
-                    <h2 className="text-[40px] font-medium">Welcome Screen & Menu Navigation</h2>
+                    <img src={welcome} alt={work.title} className="md:hidden block rounded-lg w-full" />
+                    <h2 className="text-[40px] font-medium md:text-left text-center">Welcome Screen & Menu Navigation</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
                         <p className='col-span-1 text-[20px] font-light'>
                             The user journey begins with a full-screen welcome screen designed to evoke appetite and set the mood.
@@ -70,15 +70,16 @@ function RestAppDetail() {
                             through a stepper component — a compact UI element that allows them to increment or remove quantities with minimal effort.At the bottom of the screen, a fixed action area includes
                             a prominent “Confirm Order” button, followed by the real-time total. This consistent, anchored layout ensures that users always have a clear sense of their selections and can finalize their
                             order quickly and confidently.</p>
-                        <img src={welcome} alt={work.title} className="rounded-lg w-full" />
+                        <img src={welcome} alt={work.title} className="hidden md:block rounded-lg md:justify-self-end" />
                     </div>
                 </div>
 
                 {/* PRODUCT DETAIL VIEW */}
                 <div className="mt-30 grid gap-10">
-                    <h2 className="text-[40px] font-medium text-right">Product Detail View</h2>
+                    <img src={detail} alt={work.title} className="md:hidden block rounded-lg w-full" />
+                    <h2 className="text-[40px] font-medium md:text-right text-center">Product Detail View</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
-                        <img src={detail} alt={work.title} className="rounded-lg w-full" />
+                        <img src={detail} alt={work.title} className="hidden md:block rounded-lg w-full md:max-w-[500px]" />
                         <p className='col-span-1 text-[20px] font-light text-left'>
                             Once a menu item is selected, the user is taken to a dedicated product detail screen designed to inform and entice at the same time.
                             At the top, a breadcrumb navigation with a back arrow allows users to understand their current position and return easily to the menu list.
@@ -92,7 +93,8 @@ function RestAppDetail() {
 
                 {/* ORDER RECAP */}
                 <div className="mt-30 grid gap-10">
-                    <h2 className="text-[40px] font-medium text-right">Order Recap</h2>
+                    <img src={recap} alt={work.title} className="md:hidden block rounded-lg w-full" />
+                    <h2 className="text-[40px] font-medium md:text-left text-center">Order Recap</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
                         <p className='col-span-1 text-[20px] font-light text-left'>
                             The final step in the flow is the recap screen, where users can review their selected items before submitting the order.
@@ -104,7 +106,7 @@ function RestAppDetail() {
                             This call-to-action highlights the intent: to notify the kitchen or central system of the order, without initiating any immediate payment.
                             The goal of this screen is to give users confidence and clarity before sending their order.
                             By keeping the design consistent and the interaction minimal, the experience remains simple, fast, and frictionless — right up to the final confirmation.</p>
-                        <img src={recap} alt={work.title} className="rounded-lg w-full" />
+                        <img src={recap} alt={work.title} className="hidden md:block rounded-lg w-full md:max-w-[500px] md:justify-self-end" />
                     </div>
                 </div>
 

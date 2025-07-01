@@ -20,7 +20,7 @@ function Layout() {
   return (
     <>
       <Header />
-      <div className="page-container">
+      <div className="page-container lg:pb-20">
         <div key={location.pathname} className="page-content">
           <Outlet />
         </div>
