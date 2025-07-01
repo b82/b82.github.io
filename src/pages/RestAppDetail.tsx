@@ -126,13 +126,6 @@ function RestAppDetail() {
                     </div>
                 </div>
 
-
-
-
-
-
-
-
             </section>
 
         </main>
