@@ -21,7 +21,7 @@ function Works() {
                         As a UX/UI designer with a strong background in coding, I focused not only on creating a clear and engaging interface, but also on structuring the layout in a way that would support real-world implementation.
                         The result is a concept that simplifies training, nutrition, and progress tracking — while also reflecting how good design can live in harmony with scalable, modular development.
                     </p>
-                    <Link to="/works/dailycoach" className="mt-5 text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block dark-grey text-white rounded-full px-5 py-2">Detail</Link>
+                    <Link to="/works/dailycoach" className="works-link mt-5 text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block dark-grey text-white rounded-full px-5 py-2">Detail</Link>
                 </article>
                 <article className="md:col-span-1 flex justify-end">
                     <img src="/web.svg" alt="DailyCoach" />
@@ -37,7 +37,7 @@ function Works() {
                         By combining sleek visual design with user-centered flows and considering technical feasibility, the solution does not only feels polished but could also be realistically
                         implemented using modern technologies.
                     </p>
-                    <Link to="/works/restapp" className="mt-5 text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block dark-grey text-white rounded-full px-5 py-2">Detail</Link>
+                    <Link to="/works/restapp" className="works-link mt-5 text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block dark-grey text-white rounded-full px-5 py-2">Detail</Link>
                 </article>
                 <article className="md:col-span-1 flex justify-end">
                     <img src="/mobile.svg" alt="RestApp" />

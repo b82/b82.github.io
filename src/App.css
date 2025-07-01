@@ -168,3 +168,16 @@ nav a {
     height: 340px;
   }
 }
+
+/* Link hover animation styles - Works page only */
+.works-link {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.works-link:hover {
+  background-color: #f3f3f3; /* .white-bg */
+  border: 2px solid #181818; /* .black */
+  color: #181818 !important; /* .black-text */
+  text-decoration: none !important;
+}
