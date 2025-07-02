@@ -42,11 +42,11 @@ function RestAppDetail() {
                 </div>
 
                 {/* THE GOAL */}
-                <div className="mt-10 grid grid-cols-1 gap-10 text-left">
+                <div className="mt-10 grid grid-cols-1 md:gap-10 gap-5 text-left">
                     <img src={flow} alt={work.title} className="rounded-lg w-full" />
-                    <h2 className="text-[40px] font-medium text-center">The Goal</h2>
+                    <h2 className="text-[24px] md:text-[40px] font-medium text-center">The Goal</h2>
                     <div className="grid grid-cols-1 md:gap-10">
-                        <p className='col-span-2 text-[20px] font-light'>
+                        <p className='col-span-2 text-[16px] md:text-[20px] font-light'>
                             The core goal of this concept is to offer a seamless, low-friction ordering experience that works for anyone — whether tech-savvy or not — directly from their table.
                             The entire flow is designed to minimize the number of interactions required to place an order, allowing the user to browse, select, and confirm in just a few intuitive steps.
                             Starting from a single tap to access the menu, the user is guided through a simple and visually engaging experience: scroll through large, inviting images of dishes,
@@ -57,11 +57,11 @@ function RestAppDetail() {
                 </div>
 
                 {/* WELCOME SCREEN & MENU NAVIGATION */}
-                <div className="mt-30 grid gap-10 text-left">
+                <div className="mt-20 md:mt-30 grid md:gap-10 gap-5 text-left">
                     <img src={welcome} alt={work.title} className="md:hidden block rounded-lg w-full" />
-                    <h2 className="text-[40px] font-medium md:text-left text-center">Welcome Screen & Menu Navigation</h2>
+                    <h2 className="text-[24px] md:text-[40px] font-medium md:text-left text-center leading-[1.2]">Welcome Screen & Menu Navigation</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
-                        <p className='col-span-1 text-[20px] font-light'>
+                        <p className='col-span-1 text-[16px] md:text-[20px] font-light'>
                             The user journey begins with a full-screen welcome screen designed to evoke appetite and set the mood.
                             This screen uses a vertical carousel of high-quality food images to engage the user visually, immediately creating an emotional connection with the dining experience.
                             On the right side, a clearly visible “Menu” button allows the user to proceed to the ordering interface with a single tap.
@@ -75,12 +75,12 @@ function RestAppDetail() {
                 </div>
 
                 {/* PRODUCT DETAIL VIEW */}
-                <div className="mt-30 grid gap-10">
+                <div className="mt-20 md:mt-30 grid md:gap-10 gap-5">
                     <img src={detail} alt={work.title} className="md:hidden block rounded-lg w-full" />
-                    <h2 className="text-[40px] font-medium md:text-right text-center">Product Detail View</h2>
+                    <h2 className="text-[24px] md:text-[40px] font-medium md:text-right text-center">Product Detail View</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
                         <img src={detail} alt={work.title} className="hidden md:block rounded-lg w-full md:max-w-[500px]" />
-                        <p className='col-span-1 text-[20px] font-light text-left'>
+                        <p className='col-span-1 text-[16px] md:text-[20px] font-light text-left'>
                             Once a menu item is selected, the user is taken to a dedicated product detail screen designed to inform and entice at the same time.
                             At the top, a breadcrumb navigation with a back arrow allows users to understand their current position and return easily to the menu list.
                             The main section features a large, high-quality image of the selected item — purposely prominent to trigger visual appetite and support confident decision-making.
@@ -92,11 +92,11 @@ function RestAppDetail() {
                 </div>
 
                 {/* ORDER RECAP */}
-                <div className="mt-30 grid gap-10">
+                <div className="mt-20 md:mt-30 grid md:gap-10 gap-5">
                     <img src={recap} alt={work.title} className="md:hidden block rounded-lg w-full" />
-                    <h2 className="text-[40px] font-medium md:text-left text-center">Order Recap</h2>
+                    <h2 className="text-[24px] md:text-[40px] font-medium md:text-left text-center">Order Recap</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
-                        <p className='col-span-1 text-[20px] font-light text-left'>
+                        <p className='col-span-1 text-[16px] md:text-[20px] font-light text-left'>
                             The final step in the flow is the recap screen, where users can review their selected items before submitting the order.
                             At the top, a breadcrumb indicates the current section and includes a back arrow to return to the menu if needed.
                             The main content area displays a familiar, consistent layout: each product is shown exactly as it appeared in the menu — with its image, name, price, and the stepper
@@ -111,11 +111,11 @@ function RestAppDetail() {
                 </div>
 
                 {/* CONCLUSION */}
-                <div className="mt-30 grid gap-10">
+                <div className="mt-20 md:mt-30 grid md:gap-10 gap-5">
                     <div className="divider black h-[10px] w-[140px] place-self-center"></div>
-                    <h2 className="text-[40px] font-medium text-center">Final Considerations</h2>
+                    <h2 className="text-[24px] md:text-[40px] font-medium text-center">Final Considerations</h2>
                     <div className="grid grid-cols-1 md:gap-10">
-                        <p className='col-span-1 text-[20px] font-light text-left'>
+                        <p className='col-span-1 text-[16px] md:text-[20px] font-light text-left'>
                             This concept was designed to offer a fast, intuitive, and visually engaging ordering experience for customers inside restaurants or pubs.
                             The entire interaction flow was kept minimal and direct, allowing users to browse, select, and send their order with as little friction as possible — without logins, registrations, or payment steps.
                             The design leverages large visuals, simplified navigation, and a modular component structure to make the app accessible to a wide range of users, regardless of their technical familiarity or available time.
