@@ -25,10 +25,10 @@ function Home() {
     return (
         <main>
             {/* INTRO */}
-            <section id="intro" className="text-center">
-                <h1 className="text-[40px] font-medium m-0 mt-20">LUCA MORMILE</h1>
-                <h2 className="text-[20px] font-regular">UI/UX Designer, Product Designer, Developer</h2>
-                <h3 className="text-[36px] font-regular mt-5">I create smooth and elegant but easy to use software interfaces</h3>
+            <section id="intro" className="text-center md:mt-20 mt-10">
+                <h1 className="text-[40px] font-medium md:m-0">LUCA MORMILE</h1>
+                <h2 className="text-[16px] md:text-[20px] font-regular">UI/UX Designer, Product Designer, Developer</h2>
+                <h3 className="text-[22px] md:text-[36px] font-regular mt-5 leading-[1.2]">I create smooth and elegant but easy to use software interfaces</h3>
             </section>
 
             {/* SHOWCASE */}
@@ -57,7 +57,7 @@ function Home() {
             <section id="expertises" className="w-full grid grid-cols-1 lg:grid-cols-10 gap-5">
                 <article className="md:col-span-3">
                     <p className="text-[24px] font-regular text-left">My areas of expertise</p>
-                    <p className="text-[20px] font-light text-left">UX/UI Designer and Developer with 15+ years of experience crafting intuitive, high-performing interfaces for web and mobile applications.
+                    <p className="text-[20px] font-light text-left mb-5">UX/UI Designer and Developer with 15+ years of experience crafting intuitive, high-performing interfaces for web and mobile applications.
                         My strong technical background and deep understanding of design principles allow me to merge aesthetics, usability, and accessibility into seamless digital experiences.
                         Over the years, I've worked closely with product and UX teams to improve user journeys, design modern and engaging interfaces, and enhance overall product performance — always with a focus on clarity,
                         efficiency, and current design trends.</p>

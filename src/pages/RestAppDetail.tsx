@@ -1,9 +1,9 @@
 import { Link } from 'react-router'
 import data from '../database/data.json'
-import flow from '../../public/images/restapp/flow.png'
-import welcome from '../../public/images/restapp/1.png'
-import detail from '../../public/images/restapp/2.png'
-import recap from '../../public/images/restapp/3.png'
+import flow from '/images/restapp/flow.png'
+import welcome from '/images/restapp/1.png'
+import detail from '/images/restapp/2.png'
+import recap from '/images/restapp/3.png'
 
 function RestAppDetail() {
 
@@ -22,7 +22,7 @@ function RestAppDetail() {
 
     return (
         <main>
-            <section className="mt-20">
+            <section className="md:mt-20 mt-10">
 
                 {/* BACK TO WORKS */}
                 {/* <Link to="/works" className="text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block">
@@ -31,9 +31,9 @@ function RestAppDetail() {
 
                 {/* OVERVIEW */}
                 <div className="mt-10 grid grid-cols-1 gap-5 text-center">
-                    <h1 className="text-[48px] font-medium text-center">Use case - Ordering a product</h1>
-                    <h2 className="text-[40px] font-medium text-center">Overview</h2>
-                    <p className="mb-20 text-[20px] font-light">
+                    <h1 className="text-[32px] md:text-[48px] font-medium text-center leading-[1.2]">Use case - Ordering a product</h1>
+                    <h2 className="text-[24px] md:text-[40px] font-medium text-center">Overview</h2>
+                    <p className="mb-5 md:mb-20 text-[16px] md:text-[20px] font-light">
                         This project involved designing a mobile app intended for direct use by customers inside pubs or restaurants,
                         aimed at simplifying and speeding up the ordering experience.
                         The interface is minimal, visual, and intuitive, with large images to highlight dishes and create a distinct

@@ -35,7 +35,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   h1 {
     font-size: 34px;
   }
@@ -48,7 +48,7 @@ html {
   h4 {
     font-size: 16px;
   }
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
