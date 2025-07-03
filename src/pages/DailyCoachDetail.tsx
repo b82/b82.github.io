@@ -121,7 +121,7 @@ function DailyCoachDetail() {
 
                 {/* CONCLUSION */}
                 <div className="mt-20 grid grid-cols-1 md:gap-10 gap-5 text-left">
-                    <div className="divider black h-[10px] w-[140px] place-self-center"></div>
+                    <div className="divider black md:h-[10px] h-[5px] w-[140px] place-self-center"></div>
                     <h2 className="text-[26px] md:text-[40px] font-medium text-center">Final Considerations</h2>
                     <p className="text-[16px] md:text-[20px] font-light">
                         This concept was designed with a clear focus on usability, clarity, and engagement. Every section of the interface aims to reduce friction and guide the user through their training and nutrition
