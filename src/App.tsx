@@ -1,5 +1,5 @@
 import './App.css'
-import { createBrowserRouter, RouterProvider, Outlet, useLocation } from 'react-router'
+import { createHashRouter, RouterProvider, Outlet, useLocation } from 'react-router'
 import { useEffect } from 'react'
 import Home from './pages/Home'
 import Works from './pages/Works'
@@ -30,7 +30,7 @@ function Layout() {
   )
 }
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Layout />,
