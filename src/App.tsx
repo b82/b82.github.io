@@ -7,6 +7,7 @@ import DailyCoachDetail from './pages/DailyCoachDetail'
 import RestAppDetail from './pages/RestAppDetail'
 import Header from './components/Header'
 import Contacts from './components/Contacts'
+import StudyGroupDetail from './pages/StudyGroupDetail'
 
 // Simple layout with page transitions
 function Layout() {
@@ -50,6 +51,10 @@ const router = createHashRouter([
       {
         path: "works/restapp",
         element: <RestAppDetail />,
+      },
+      {
+        path: "works/studygroup",
+        element: <StudyGroupDetail />,
       },
     ],
   },

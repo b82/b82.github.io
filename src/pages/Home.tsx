@@ -11,6 +11,14 @@ function Home() {
             image: "/mobile.svg",
             path: "restapp"
         },
+        // {
+        //     id: 1,
+        //     title: "AI StudyGroup",
+        //     description: "AI-powered study group platform",
+        //     type: "Mobile",
+        //     image: "/study_group_mock.png",
+        //     path: "studygroup"
+        // },
         {
             id: 2,
             title: "DailyCoach",

@@ -24,11 +24,6 @@ function RestAppDetail() {
         <main>
             <section className="md:mt-20 mt-10">
 
-                {/* BACK TO WORKS */}
-                {/* <Link to="/works" className="text-[20px] font-regular text-blue-600 hover:underline mb-8 inline-block">
-                    ← Back to Works
-                </Link> */}
-
                 {/* OVERVIEW */}
                 <div className="mt-10 grid grid-cols-1 gap-5 text-center">
                     <h1 className="text-[32px] md:text-[48px] font-medium text-center leading-[1.2]">Use case - Ordering a product</h1>
