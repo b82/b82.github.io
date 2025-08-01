@@ -13,6 +13,19 @@ function Works() {
             {/* WORKS */}
             <section className="mt-10 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-8">
 
+                {/* AI StudyGroup */}
+                <WorksPreviewItem
+                    title="AI StudyGroup"
+                    subtitle="AI-powered study group platform"
+                    type="Mobile"
+                    description="Use case about a mobile-first platform designed to help people connect around shared study interests, both remotely and onsite. 
+                        The concept focuses on inclusivity, ease of access, and meaningful group interactions.
+A clean and inviting interface, fast discovery paths, and smart topic suggestions guide users—whether tech-savvy or not—toward forming or joining study groups with minimal friction.
+The design carefully balances social interaction with focused intent, using user personas and real-world challenges to shape intuitive, scalable flows. The result is a solution that feels both human and efficient, and is well-suited for future implementation using modern cross-platform technologies."
+                    url="/works/studygroup"
+                    image="/study_group_mock.png"
+                />
+
                 {/* RestApp */}
                 <WorksPreviewItem
                     title="RestApp"
@@ -25,19 +38,6 @@ function Works() {
                     url="/works/restapp"
                     image="/mobile.svg"
                 />
-
-                {/* AI StudyGroup */}
-                {/* <WorksPreviewItem
-                    title="AI StudyGroup"
-                    subtitle="AI-powered study group platform"
-                    type="Mobile"
-                    description="Use case about a mobile-first platform designed to help people connect around shared study interests, both remotely and onsite. 
-                        The concept focuses on inclusivity, ease of access, and meaningful group interactions.
-A clean and inviting interface, fast discovery paths, and smart topic suggestions guide users—whether tech-savvy or not—toward forming or joining study groups with minimal friction.
-The design carefully balances social interaction with focused intent, using user personas and real-world challenges to shape intuitive, scalable flows. The result is a solution that feels both human and efficient, and is well-suited for future implementation using modern cross-platform technologies."
-                    url="/works/studygroup"
-                    image="/study_group_mock.png"
-                /> */}
 
                 {/* DailyCoach */}
                 <WorksPreviewItem

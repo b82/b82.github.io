@@ -3,22 +3,22 @@ import { Link } from 'react-router'
 function Home() {
 
     const works = [
-        {
-            id: 1,
-            title: "RestApp",
-            description: "Mobile app for on-site restaurant use",
-            type: "Mobile",
-            image: "/mobile.svg",
-            path: "restapp"
-        },
         // {
         //     id: 1,
-        //     title: "AI StudyGroup",
-        //     description: "AI-powered study group platform",
+        //     title: "RestApp",
+        //     description: "Mobile app for on-site restaurant use",
         //     type: "Mobile",
-        //     image: "/study_group_mock.png",
-        //     path: "studygroup"
+        //     image: "/mobile.svg",
+        //     path: "restapp"
         // },
+        {
+            id: 1,
+            title: "AI StudyGroup",
+            description: "AI-powered study group platform",
+            type: "Mobile",
+            image: "/study_group_mock.png",
+            path: "studygroup"
+        },
         {
             id: 2,
             title: "DailyCoach",
