@@ -209,12 +209,12 @@ function StudyGroupDetail() {
                         <div>
                             <h3 className="text-[24px] md:text-[40px] font-medium text-left">Key Findings</h3>
                             <p className='col-span-1 text-[16px] md:text-[20px] font-light'>
-                                - Loneliness and demotivation are common when studying solo - even more than lack of time.<br />
-                                - Users often seek lightweight and informal peer support, not structured tutoring.<br />
-                                - Existing tools (forums, chats, communities) are fragmented and not designed around learning rhythms or shared goals.<br />
-                                - Users prefer platforms that are easy to navigate, visually clean, and don't feel like traditional academic tools.<br />
-                                - In-person meetups are appreciated but hard to organize without geographic filters and topic tagging.<br />
-                                - Many users mentioned that even just knowing someone else is "studying the same thing right now" is motivating.
+                                - <BoldSpan>Loneliness and demotivation</BoldSpan> are common when studying solo - even more than lack of time.<br />
+                                - Users often seek <BoldSpan>lightweight and informal peer support</BoldSpan>, not structured tutoring.<br />
+                                - Existing tools (forums, chats, communities) are fragmented and <BoldSpan>not designed around learning rhythms</BoldSpan> or shared goals.<br />
+                                - Users prefer platforms that are <BoldSpan>easy to navigate</BoldSpan>, visually clean, and don't feel like traditional academic tools.<br />
+                                - In-person meetups are appreciated but <BoldSpan>hard to organize</BoldSpan> without geographic filters and topic tagging.<br />
+                                - Many users mentioned that even just knowing someone else is <BoldSpan>"studying the same thing right now"</BoldSpan> is motivating.
                             </p>
                         </div>
                     </div>
@@ -226,9 +226,9 @@ function StudyGroupDetail() {
                     <h2 className="text-[24px] md:text-[40px] font-medium text-left">Personas</h2>
                     <div className="grid sm:grid-cols-2 md:gap-30">
                         <p className='text-[16px] md:text-[20px] font-light'>
-                            After some research on user feedback from similar app, the ideal user for this app is a guy of 32 years old, that I imagine to call Joseph.
-                            He is a very passionate for programming language and crypto, but he lives in a very small town and he doesn't have much contact with similar interests,
-                            so he decided to sign up to StudyGroup hoping to find immediately some users to discuss about programming and crypto without lose days of research or trying other platforms.
+                            After analyzing feedback from similar platforms, I defined two ideal user types. <BoldSpan>Joseph</BoldSpan>, 32, is a developer passionate about programming and crypto, living in a small town with limited social contacts.
+                            He signs up to StudyGroup hoping to quickly find like-minded users without wasting time searching on other apps. <BoldSpan>July</BoldSpan>, 20, is a medical student fascinated by medieval culture.
+                            She's not tech-savvy but wants to build a small group of friends who share her passion, hoping the app will guide her simply and clearly.
                         </p>
                     </div>
                 </div>
@@ -348,14 +348,14 @@ function StudyGroupDetail() {
                     <h2 className="text-[24px] md:text-[40px] font-medium text-left">Key UX Challenges & Design Decisions</h2>
                     <div className="grid sm:grid-cols-2 md:gap-30">
                         <p className='col-span-1 text-[16px] md:text-[20px] font-light'>
-                            Throughout the design process, several user and product challenges emerged that shaped core design decisions. Some of the most critical included:
-                            Designing for two very different user types:While Joseph expects speed and efficiency, July needs simplicity and guidance.
-                            The solution was a dual-layered UX: minimal friction for experienced users and contextual help + onboarding for new users - without compromising the interface simplicity.
-                            Reducing the "tool fatigue" of existing platforms:Interviews and research showed that users were tired of complex, noisy platforms (like Discord or Meetup).
-                            I prioritized a clean visual hierarchy, with immediate access to relevant actions (search, join, chat) and low cognitive load per screen.
-                            Encouraging first interaction in group chats:One pain point was the hesitation to send the first message.
-                            I introduced "intro prompts" and optional first-message templates to lower social friction and improve engagement.
-                            Balancing flexibility with structure in group creation:Users wanted both spontaneous and recurring group formats.
+                            Throughout the design process, several user and product challenges emerged that shaped core design decisions. Some of the most critical included:<br /><br />
+                            <BoldSpan>Designing for two very different user types:</BoldSpan><br />While Joseph expects speed and efficiency, July needs simplicity and guidance.<br />
+                            The solution was a dual-layered UX: minimal friction for experienced users and contextual help + onboarding for new users - without compromising the interface simplicity.<br />
+                            <BoldSpan>Reducing the "tool fatigue" of existing platforms:</BoldSpan><br />Interviews and research showed that users were tired of complex, noisy platforms (like Discord or Meetup).<br />
+                            I prioritized a clean visual hierarchy, with immediate access to relevant actions (search, join, chat) and low cognitive load per screen.<br />
+                            <BoldSpan>Encouraging first interaction in group chats:</BoldSpan><br />One pain point was the hesitation to send the first message.<br />
+                            I introduced "intro prompts" and optional first-message templates to lower social friction and improve engagement.<br />
+                            <BoldSpan>Balancing flexibility with structure in group creation:</BoldSpan><br />Users wanted both spontaneous and recurring group formats.<br /><br />
                             The app flow supports creating one-time events or ongoing study groups, with minimal steps and topic-based discovery.
                         </p>
                         <div className={`${whiteBoxMarginTop} col-span-1 flex items-center justify-center`}>
@@ -412,9 +412,9 @@ function StudyGroupDetail() {
                         <div>
                             <h3 className="text-[24px] md:text-[40px] font-medium text-left">Development</h3>
                             <p className='col-span-1 text-[16px] md:text-[20px] font-light'>
-                                Although this project was primarily a UX/UI concept, I defined the design system and interface behaviors with development in mind.
-                                I structured components for easy handoff via Figma, with attention to responsiveness, accessibility (WCAG), and UI consistency.
-                                The prototype could be implemented using modern frameworks like React Native or Flutter to support both mobile and web platforms.
+                                Although this project was primarily a <BoldSpan>UX/UI concept</BoldSpan>, I defined the design system and interface behaviors with development in mind.
+                                I structured components for easy handoff via <BoldSpan>Figma</BoldSpan>, with attention to <BoldSpan>responsiveness, accessibility (WCAG), and UI consistency</BoldSpan>.
+                                The prototype could be implemented using modern frameworks like <BoldSpan>React Native</BoldSpan> or <BoldSpan>Flutter</BoldSpan> to support both mobile and web platforms.
                                 All screens were built considering flexible layout constraints, and transitions were designed using Framer principles to ensure smooth user interaction.
                                 I also explored how to scale features progressively in case of future MVP development, prioritizing core features such as "group creation" and "topic matchmaking."
                             </p>
@@ -429,12 +429,10 @@ function StudyGroupDetail() {
                             <h3 className="text-[24px] md:text-[40px] font-medium text-left">Testing & Release</h3>
                             <div className='col-span-1 text-[16px] md:text-[20px] font-light'>
                                 Usability testing was conducted on early wireframes and interactive prototypes using simulated sessions with fictional users like Joseph and July.
-                                I performed 3 informal walkthroughs and used the "think-aloud" method to observe potential points of confusion.The test results highlighted the need for:
-                                <ul>
-                                    <li>Simplified navigation labels</li>
-                                    <li>Shorter flows to reach group discovery</li>
-                                    <li>A clearer onboarding step for first-time users</li>
-                                </ul>
+                                I performed 3 informal walkthroughs and used the "think-aloud" method to observe potential points of confusion. The test results highlighted the need for:<br /><br />
+                                - <BoldSpan>Simplified navigation labels</BoldSpan><br />
+                                - <BoldSpan>Shorter flows to reach group discovery</BoldSpan><br />
+                                - <BoldSpan>A clearer onboarding step for first-time users</BoldSpan><br /><br />
                                 Based on these insights, I refined the user flow and added visual cues (empty states, hints, and helper icons).
                                 If released, I would plan a soft launch with iterative A/B testing and feedback collection via in-app surveys.
                             </div>
