@@ -26,6 +26,18 @@ The design carefully balances social interaction with focused intent, using user
                     image="/study_group_mock.png"
                 />
 
+                {/* DailyCoach */}
+                <WorksPreviewItem
+                    title="DailyCoach"
+                    subtitle="Dashboard concept for personal trainers"
+                    type="Web"
+                    description="This project explores the design of a personal training dashboard that blends user experience and development logic.
+                        As a UX/UI designer with a strong background in coding, I focused not only on creating a clear and engaging interface, but also on structuring the layout in a way that would support real-world implementation.
+                        The result is a concept that simplifies training, nutrition, and progress tracking - while also reflecting how good design can live in harmony with scalable, modular development."
+                    url="/works/dailycoach"
+                    image="/web.svg"
+                />
+
                 {/* RestApp */}
                 <WorksPreviewItem
                     title="RestApp"
@@ -37,18 +49,6 @@ The design carefully balances social interaction with focused intent, using user
                         implemented using modern technologies."
                     url="/works/restapp"
                     image="/mobile.svg"
-                />
-
-                {/* DailyCoach */}
-                <WorksPreviewItem
-                    title="DailyCoach"
-                    subtitle="Dashboard concept for personal trainers"
-                    type="Web"
-                    description="This project explores the design of a personal training dashboard that blends user experience and development logic.
-                        As a UX/UI designer with a strong background in coding, I focused not only on creating a clear and engaging interface, but also on structuring the layout in a way that would support real-world implementation.
-                        The result is a concept that simplifies training, nutrition, and progress tracking - while also reflecting how good design can live in harmony with scalable, modular development."
-                    url="/works/dailycoach"
-                    image="/web.svg"
                 />
 
 

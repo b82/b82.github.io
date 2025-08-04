@@ -18,6 +18,8 @@ import low_res from '/images/studygroup/low_res.svg'
 import high_res from '/images/studygroup/hi_res.svg'
 import development from '/images/studygroup/development.png'
 import testing_release from '/images/studygroup/testing_release.png'
+import studygroup_demo from '/images/studygroup/demo.mp4'
+import studygroup_demo_poster from '/images/studygroup/mock/home-portrait.png'
 
 
 function BoldSpan({ children }: { children: React.ReactNode }) {
@@ -445,16 +447,28 @@ function StudyGroupDetail() {
                 <div className={`${sectionMarginTop} grid grid-cols-1 md:gap-10 gap-5 text-left`}>
                     <div className="divider black h-[3px] w-[140px] justify-self-center"></div>
                     <h2 className="text-[24px] md:text-[40px] font-medium text-center">Conclusions</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-4 md:gap-10">
-                        <div className="md:col-span-1"></div>
-                        <p className='col-span-2 text-[16px] md:text-[20px] font-light'>
-                            This project allowed me to explore a solution that balances social connection with focused study environments, tailored to both tech-savvy and non-tech users.
-                            The biggest challenge was designing a universal entry point that doesn't intimidate users like July while satisfying Joseph's need for speed and efficiency.
-                            I followed a user-centered, problem-first approach with measurable improvements along the way.
-                            If further developed, I would explore community moderation tools and smart matching algorithms to foster healthier interactions.
-                            Overall, this concept demonstrates my ability to combine strategic UX thinking with real-world usability needs across different user types.
-                        </p>
-                        <div className="md:col-span-1"></div>
+                    <div className="grid grid-cols-1 md:gap-10">
+                        {/* <div className="md:col-span-1"></div> */}
+                        <div className='text-[16px] md:text-[20px] font-light'>
+                            <p>This project allowed me to explore a solution that balances social connection with focused study environments, tailored to both tech-savvy and non-tech users.
+                                The biggest challenge was designing a universal entry point that doesn't intimidate users like July while satisfying Joseph's need for speed and efficiency.
+                                I followed a user-centered, problem-first approach with measurable improvements along the way.
+                                If further developed, I would explore community moderation tools and smart matching algorithms to foster healthier interactions.
+                                Overall, this concept demonstrates my ability to combine strategic UX thinking with real-world usability needs across different user types.
+                            </p>
+                        </div>
+                        {/* <div className="md:col-span-1"></div> */}
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-6 md:gap-10">
+                        <div className="md:col-span-2"></div>
+                        <div className='col-span-2 text-[16px] md:text-[20px] font-light'>
+                            <video className="mt-10" controls playsInline preload="auto" width="100%" poster={studygroup_demo_poster}>
+                                <source src={studygroup_demo} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div className="md:col-span-2"></div>
                     </div>
                 </div>
 
