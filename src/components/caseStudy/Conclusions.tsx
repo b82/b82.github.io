@@ -1,4 +1,5 @@
-export default function Conclusions({ title, description, sectionMarginTop, video, video_poster }: { title: string, description: React.ReactNode, sectionMarginTop: string, video: string, video_poster: string }) {
+export default function Conclusions({ description, sectionMarginTop }: { description: React.ReactNode, sectionMarginTop: string }) {
+    const title = 'Conclusions'
     return (
         <div className={`${sectionMarginTop} grid grid-cols-1 md:gap-10 gap-5 text-left`}>
             <div className="divider black h-[3px] w-[140px] justify-self-center"></div>
@@ -9,17 +10,6 @@ export default function Conclusions({ title, description, sectionMarginTop, vide
                     <p>{description}</p>
                 </div>
                 {/* <div className="md:col-span-1"></div> */}
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-6 md:gap-10">
-                <div className="md:col-span-2"></div>
-                <div className='col-span-2 text-[16px] md:text-[20px] font-light'>
-                    <video className="mt-10" controls playsInline preload="auto" width="100%" poster={video_poster}>
-                        <source src={video} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <div className="md:col-span-2"></div>
             </div>
         </div>
     )

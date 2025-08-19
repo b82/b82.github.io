@@ -1,4 +1,5 @@
-export default function DesignImplications({ title, description, sectionMarginTop }: { title: string, description: React.ReactNode, sectionMarginTop: string }) {
+export default function DesignImplications({ description, sectionMarginTop }: { description: React.ReactNode, sectionMarginTop: string }) {
+    const title = 'Design Implications'
     return (
         <div className={`${sectionMarginTop} grid grid-cols-1 md:gap-10 gap-5 text-left`}>
             <div className="divider black h-[3px] w-[140px]"></div>

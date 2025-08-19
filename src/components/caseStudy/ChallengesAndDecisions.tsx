@@ -1,6 +1,7 @@
 export default function ChallengesAndDecisions(
-    { title, description, sectionMarginTop, whiteBoxMarginTop, whiteBoxDescription }:
-        { title: string, description: React.ReactNode, sectionMarginTop: string, whiteBoxMarginTop: string, whiteBoxDescription: React.ReactNode }) {
+    { description, sectionMarginTop, whiteBoxMarginTop, whiteBoxDescription }:
+        { description: React.ReactNode, sectionMarginTop: string, whiteBoxMarginTop: string, whiteBoxDescription: React.ReactNode }) {
+    const title = 'Key UX Challenges & Design Decisions'
     return (
         <div className={`${sectionMarginTop} grid grid-cols-1 md:gap-10 gap-5 text-left`}>
             <div className="divider black h-[3px] w-[140px]"></div>

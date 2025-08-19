@@ -14,7 +14,7 @@ function Home() {
         {
             id: 1,
             title: "AI StudyGroup",
-            description: "AI-powered study group platform",
+            description: "Study group platform with AI assistant",
             type: "Mobile",
             image: "/study_group_mock.png",
             path: "studygroup"

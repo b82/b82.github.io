@@ -3,11 +3,11 @@ import { createHashRouter, RouterProvider, Outlet, useLocation } from 'react-rou
 import { useEffect } from 'react'
 import Home from './pages/Home'
 import Works from './pages/Works'
-import DailyCoachDetail from './pages/DailyCoachDetail'
+import DailyCoach from './pages/case_study/DailyCoach'
 import RestAppDetail from './pages/RestAppDetail'
 import Header from './components/Header'
 import Contacts from './components/Contacts'
-import StudyGroupDetail from './pages/StudyGroupDetail'
+import StudyGroup from './pages/case_study/StudyGroup'
 
 // Simple layout with page transitions
 function Layout() {
@@ -46,7 +46,7 @@ const router = createHashRouter([
       },
       {
         path: "works/dailycoach",
-        element: <DailyCoachDetail />,
+        element: <DailyCoach />,
       },
       {
         path: "works/restapp",
@@ -54,7 +54,7 @@ const router = createHashRouter([
       },
       {
         path: "works/studygroup",
-        element: <StudyGroupDetail />,
+        element: <StudyGroup />,
       },
     ],
   },

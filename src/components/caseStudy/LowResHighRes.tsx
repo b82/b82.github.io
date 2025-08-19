@@ -1,4 +1,5 @@
-export default function LowResHighRes({ title, description, sectionMarginTop }: { title: string, description: React.ReactNode, sectionMarginTop: string }) {
+export default function LowResHighRes({ description, sectionMarginTop }: { description: React.ReactNode, sectionMarginTop: string }) {
+    const title = 'Low Res VS High Res'
     return (
         <div className={`${sectionMarginTop} grid grid-cols-1 md:gap-10 gap-5 text-left`}>
             <div className="divider black h-[3px] w-[140px]"></div>

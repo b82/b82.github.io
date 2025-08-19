@@ -1,6 +1,6 @@
-import calendar_icon from '/images/studygroup/calendar_icon.png'
-import pin_icon from '/images/studygroup/pin_icon.png'
-import heart_icon from '/images/studygroup/heart_icon.png'
+import calendar_icon from '/images/calendar_icon.png'
+import pin_icon from '/images/pin_icon.png'
+import heart_icon from '/images/heart_icon.png'
 
 export default function PersonasCard(
     { name, age, location, image, job, status, goals, behaviours, painPoints, personality }:

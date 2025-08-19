@@ -1,4 +1,5 @@
-export default function Process({ title, description, sectionMarginTop, image }: { title: string, description: React.ReactNode, sectionMarginTop: string, image: string }) {
+export default function Process({ description, sectionMarginTop, image }: { description: React.ReactNode, sectionMarginTop: string, image: string }) {
+    const title = 'Process'
     return (
         <div className={`${sectionMarginTop} grid grid-cols-1 md:gap-10 gap-5 text-left`}>
             <h2 className="text-[24px] md:text-[40px] font-medium text-center">{title}</h2>

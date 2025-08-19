@@ -1,4 +1,4 @@
-export default function Problem({ title, description, sectionMarginTop }: { title: string, description: React.ReactNode, sectionMarginTop: string }) {
+export default function WhiteBox({ description, sectionMarginTop, title }: { description: React.ReactNode, sectionMarginTop: string, title: string }) {
     return (
         <div className={`${sectionMarginTop} grid grid-cols-1 md:gap-10 gap-5 text-left`}>
             <div className="grid grid-cols-1 md:grid-cols-4 md:gap-10">

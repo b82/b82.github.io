@@ -1,5 +1,5 @@
-export default function KeyFindings({ title, description, sectionMarginTop, image, workTitle }: { title: string, description: React.ReactNode, sectionMarginTop: string, image: string, workTitle: string }) {
-
+export default function KeyFindings({ description, sectionMarginTop, image, workTitle }: { description: React.ReactNode, sectionMarginTop: string, image: string, workTitle: string }) {
+    const title = 'Key Findings'
     return (
         <div className={`${sectionMarginTop} grid grid-cols-1 md:gap-10 gap-5 text-left`}>
             <div className="grid sm:grid-cols-2 md:gap-30">
