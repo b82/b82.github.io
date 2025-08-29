@@ -33,10 +33,12 @@ function Home() {
     return (
         <main>
             {/* INTRO */}
-            <section id="intro" className="text-center md:mt-20 mt-10">
-                <h1 className="text-[40px] font-medium md:m-0">LUCA MORMILE</h1>
-                <h2 className="text-[16px] md:text-[20px] font-regular">UI/UX Designer, Product Designer, Developer</h2>
-                <h3 className="text-[22px] md:text-[36px] font-regular mt-5 leading-[1.2]">I create smooth and elegant but easy to use software interfaces</h3>
+            <section id="intro" className="md:mt-20 mt-10 text-center md:text-left">
+                <h2 className="text-[20px] md:text-[120px] md:leading-[1] font-extralight">UI/UX Designer</h2>
+                <h2 className="text-[20px] md:text-[120px] md:leading-[1] font-extralight">Product Designer</h2>
+                <h2 className="text-[20px] md:text-[120px] md:leading-[1] font-extralight">Developer</h2>
+                <h1 className="text-[24px] mt-5 md:mt-3 md:text-[120px] font-bold leading-[1]">LUCA MORMILE</h1>
+                <h3 className="text-[14px] md:text-[36px] mt-5 md:mt-0 font-light">I turn ideas into clear, high-performing experiences that work in the real world</h3>
             </section>
 
             {/* SHOWCASE */}
